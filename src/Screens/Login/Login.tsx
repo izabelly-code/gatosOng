@@ -4,9 +4,9 @@ import Card from "../../Components/Layout/Card"
 
 function Login() {
     return(
-        <div className="max-w-full max-h-full">
+        <div className="w-full h-screen bg-red-500 flex items-center justify-center">
             <Card>
-                <div>oi</div>
+                <div className="bg-red-500">oi</div>
             </Card>
         </div>
     )
