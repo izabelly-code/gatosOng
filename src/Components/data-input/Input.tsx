@@ -7,12 +7,13 @@ interface InputProps {
     id: string
     name: string
     placeholder?: string
+    className?: string
 }
 
-function Input({ label, type, icon, id, name, placeholder }: InputProps) {
+function Input({ label, type, icon, id, name, placeholder, className }: InputProps) {
     return (
         <>
-                <label className="flex flex-col">
+                <label className={`flex flex-col ${className}`}>
                     <h3>{label}</h3>
                     <div className="relative flex gap-2">
                         {icon && (
