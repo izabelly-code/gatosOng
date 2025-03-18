@@ -3,11 +3,13 @@ import Input from "../../Components/data-input/Input"
 import { CiMail } from "react-icons/ci";
 import { IoKeyOutline } from "react-icons/io5";
 import Button from "../../Components/Layout/Button";
+import { Outlet, Link } from "react-router-dom";
 
 
 
 function Login() {
     return(
+    <>
         <div className="w-full h-screen flex items-center justify-center">
             <Card className="flex flex-col gap-10">
                 <div className="flex justify-center">
@@ -20,12 +22,16 @@ function Login() {
 
                 <Button order="primary" text="Login"></Button>
 
-                <a className="text-sky-700 cursor-pointer hover:text-sky-900">Don't have an account?</a>
+                <Link className="text-sky-700 cursor-pointer hover:text-sky-900" to="signup">Don't have an account?</Link>
                 </div>
                 
                 
             </Card>
+            
         </div>
+        <Outlet/>
+        </>
+        
     )
 }
 
