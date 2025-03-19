@@ -4,6 +4,7 @@ import br.com.pucpr.gatosong.donation.model.DonationModel;
 import br.com.pucpr.gatosong.donation.repository.DonationRepository;
 import br.com.pucpr.gatosong.donation.service.DonationService;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import java.util.Optional;
 
 @Service
 @AllArgsConstructor
+@NoArgsConstructor
 public class DefaultDonationService implements DonationService {
 
     private static final Logger logger = LogManager.getLogger(DefaultDonationService.class);

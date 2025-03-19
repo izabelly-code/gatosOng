@@ -31,7 +31,7 @@ public class DefaultDonationFacade implements DonationFacade {
         target.setDonator(source.getDonator());
         target.setDate(source.getDate());
 
-        return getDonationService().updateDonation(target);
+        return donationService.updateDonation(target);
     }
 
     @Override
